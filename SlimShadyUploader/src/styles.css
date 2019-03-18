@@ -1,0 +1,103 @@
+/* Master Styles */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Black+Ops+One|Bungee+Inline|Fredoka+One|Gloria+Hallelujah|Love+Ya+Like+A+Sister|Luckiest+Guy|Permanent+Marker|Special+Elite');
+
+
+h1 {
+  color: #369;
+  font-family: 'Black Ops One', cursive;
+  font-size: 250%;
+}
+
+h2 {
+  color: rgb(163, 24, 36);
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: lighter;
+}
+h3 {
+  color: rgb(44, 11, 133);
+  font-family: 'Bungee Inline', cursive;
+  font-weight: lighter;
+}
+
+body {
+  margin: 2em;
+  /* background-image: url('https://confluence.equifax.com/download/attachments/265458404/TeamWithSlim.png?version=1&modificationDate=1529597059000&api=v2'); */
+  background-size: cover; 
+}
+
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+div .form-control-feedback{
+  color: #863f10;
+  /* font-family: 'Fredoka One', cursive; */
+}
+
+label{
+  font-family: 'Special Elite', cursive;
+}
+
+footer div{
+  align-self: right;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+footer img{
+  align-self: left;
+}
+/* everywhere else
+* {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+/* font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Bungee Inline', cursive; */

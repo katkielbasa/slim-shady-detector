@@ -30,7 +30,7 @@ export class UploadFormComponent implements OnInit {
     this.lastName = new FormControl('', Validators.required);
     this.email = new FormControl('', [
       Validators.required,
-      Validators.pattern("[^@]+@equifax\.com$")
+      Validators.pattern("[^@]+@company\.com$")
     ]);
     this.password = new FormControl('', [
       Validators.required
@@ -78,8 +78,6 @@ export class UploadFormComponent implements OnInit {
   uploadfile(file) {
     this.fullName = this.firstName.value + ' '+ this.lastName.value;
     const userFolder = this.firstName.value + this.lastName.value
-      console.log("in console file", file);
-      console.log("in console this.fullName ", this.fullName );
 
     const bucket = new S3(
       {
@@ -99,23 +97,22 @@ export class UploadFormComponent implements OnInit {
  
     bucket.upload(params, function (err, data) {
       if (err) {
-        console.log('There was an error uploading your file: ', err);
+  //    console.log('There was an error uploading your file: ', err);
         return false;
       }
-      console.log('Successfully uploaded file.', data);
+  //    console.log('Successfully uploaded file.', data);
       return true;
     });
   }
  
    fileEvent(fileInput:any) {
-     console.log('fileevent fileInput: ',fileInput);
      this.selectedFile = fileInput.target.files[0];
    }
 
     onSubmit() {
     if (this.myform.valid) {
-      console.log("Form Submitted!");
-      console.log('selected file submit: ',this.selectedFile);
+  //    console.log("Form Submitted!");
+ //     console.log('selected file submit: ',this.selectedFile);
       this.uploadfile(this.selectedFile);
       this.myform.reset();
     } 

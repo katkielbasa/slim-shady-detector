@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Slim Shady Detector</string>
+    <string name="title_home">Home</string>
+
+
+    <color name="white">#FFFFFF</color>
+</resources>
